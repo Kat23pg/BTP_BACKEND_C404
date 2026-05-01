@@ -1,0 +1,19 @@
+@Metadata.layer: #CORE
+
+@UI: { headerInfo: { typeName: 'Travel',
+                     typeNamePlural: 'Travels',
+ title:{ type: #STANDARD,
+         value: 'TravelID'
+ }
+},
+presentationVariant: [{ sortOrder: [{ by: 'TravelID',
+                                 direction: #DESC }],
+                                 visualizations: [ { type: #AS_LINEITEM } ] } ]}
+
+annotate entity ZTRAVEL_C_2803 with
+{
+@UI.hidden: true
+TravelUUID;
+  //  element_name;
+
+}
